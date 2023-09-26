@@ -2,7 +2,7 @@ service: s3-file-api
 
 provider:
   name: aws
-  runtime: nodejs20.x
+  runtime: nodejs18.x
   stage: dev
   region: us-west-1
   apiName: ${self:service}
