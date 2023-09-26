@@ -7,7 +7,7 @@ provider:
   region: us-west-1
   apiName: ${self:service}
   memorySize: 128 # mb
-  timeout: 10
+  timeout: 10 #seconds
   environment:
     FILE_UPLOAD_BUCKET_NAME: ${self:custom.fileBucketName}
 
