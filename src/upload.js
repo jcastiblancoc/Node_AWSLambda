@@ -6,13 +6,6 @@ const BUCKET_NAME = process.env.FILE_UPLOAD_BUCKET_NAME;
 
 module.exports.handler = async event => {
     console.log(event);
-
-    // The output from a Lambda proxy integration must be 
-    // in the following JSON object. The 'headers' property 
-    // is for custom response headers in addition to standard 
-    // ones. The 'body' property  must be a JSON string. For 
-    // base64-encoded payload, you must also set the 'isBase64Encoded'
-    // property to 'true'.
     const response = {
         isBase64Encoded: false,
         statusCode: 200,
